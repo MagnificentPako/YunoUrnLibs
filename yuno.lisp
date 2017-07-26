@@ -5,3 +5,5 @@
         '()
         (cons x
             (repeat x (- y 1)))))
+
+(defun µ (t) (print! t))
