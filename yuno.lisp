@@ -1,9 +1,7 @@
 (defmacro λ (&args) `(lambda ,@args))
 
-(defun repeat (x y)
-    (if (= 0 y)
-        '()
-        (cons x
-            (repeat x (- y 1)))))
-
-(defun µ (t) (print! t))
+(defun repeat (v x)
+    (with (l '())
+              (for i 1 x 1
+                         (push-cdr! l v))
+                  l))
