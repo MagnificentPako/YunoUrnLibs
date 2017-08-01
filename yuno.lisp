@@ -1,4 +1,5 @@
 (defmacro λ (&args) `(lambda ,@args))
+(defmacro dλ (&args) `(defun ,@args))
 
 (defun repeat (v x)
   (with (l '())
