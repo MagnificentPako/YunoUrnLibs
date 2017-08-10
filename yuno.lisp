@@ -13,4 +13,4 @@
     l))
 
 (dλ take-random (x)
-    (nth x (random 1 (# x))))
+    (nth x (random 1 (n x))))
